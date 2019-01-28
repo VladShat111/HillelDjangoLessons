@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container text-center" id="headerOfDesk">
+        <div class="row">
+            <div class="col-lg-12">
+                 <h1 >File Desk</h1 >
+                <a href="{% url 'logout' %}" class="btn btn-success">Log out</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="fileOfDesk">
+        {% for file in fileToShow %}
+        <div class="row">
+            <div class="col-lg-4 box">
+                <strong>{{ file.filename }}</strong>
+            </div>
+            <div class="col-lg-4 box">
+                {{ file.fileForDownload }}
+            </div>
+
+            <div class="col-lg-4 box">
+                <a href="{{ file.fileForDownload.url }}" class="btn btn-dark" download> Download</a>
+            </div>
+            <br><br>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

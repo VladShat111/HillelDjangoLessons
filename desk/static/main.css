@@ -1,0 +1,33 @@
+#headerOfDesk {
+    margin: 30px;
+
+}
+#headerOfDesk a{
+    margin-left: 100%;
+
+}
+
+#loginPage{
+    margin-top: 10%
+}
+
+
+#loginPage h1{
+    text-align: center
+}
+
+#loginPage form{
+    margin-top: 15px;
+    margin-left: 400px;
+}
+
+#loginPage a{
+    margin-top: 4px;
+    margin-left: 400px;
+}
+
+#regForm h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
